@@ -1,4 +1,4 @@
-/*! TableSorter (FORK) v2.31.0 *//*
+/*! TableSorter (FORK) v2.31.1 *//*
 * Client-side table sorting with ease!
 * @requires jQuery v1.2.6+
 *
@@ -22,7 +22,7 @@
 	'use strict';
 	var ts = $.tablesorter = {
 
-		version : '2.31.0',
+		version : '2.31.1',
 
 		parsers : [],
 		widgets : [],
@@ -319,6 +319,8 @@
 			ts.applyWidget( table, true );
 			// if user has supplied a sort list to constructor
 			if ( c.sortList.length > 0 ) {
+				// save sortList before any sortAppend is added
+				c.last.sortList = c.sortList;
 				ts.sortOn( c, c.sortList, {}, !c.initWidgets );
 			} else {
 				ts.setHeadersCss( c );
