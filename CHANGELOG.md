@@ -1,6 +1,13 @@
 Changelog
 ===
 
+#### v1.27.0 (2019-08-18)
+
+* Bump rails dependency to support Rails 6.0.0
+* Add some metadata to gemspec
+* Update Readme
+* Update copyright
+
 #### v1.26.1 (2018-11-22)
 
 * Upgrade tablesorter to v2.31.1

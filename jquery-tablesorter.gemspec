@@ -19,9 +19,8 @@ Gem::Specification.new do |s|
     'source_code_uri' => 'https://github.com/themilkman/jquery-tablesorter-rails'
   }
 
-  s.files       = Dir['{vendor,lib}/**/*'] + %w( MIT-LICENSE Rakefile README.md )
+  s.files = Dir['{vendor,lib}/**/*'] + %w[MIT-LICENSE Rakefile README.md]
 
   s.required_ruby_version = '>= 1.9.3'
-
-  s.add_dependency 'railties', '>= 3.2', '< 6'
+  s.add_dependency 'railties', '>= 3.2', '~> 6.0.0'
 end
