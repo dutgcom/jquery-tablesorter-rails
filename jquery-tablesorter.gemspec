@@ -13,6 +13,11 @@ Gem::Specification.new do |s|
   s.summary     = "Simple integration of jquery-tablesorter (Mottie's fork) into the Rails asset pipeline."
   s.description = "Simple integration of jquery-tablesorter (Mottie's fork) into the Rails asset pipeline."
   s.license     = 'MIT'
+  s.metadata    = {
+    'bug_tracker_uri' => 'https://github.com/themilkman/jquery-tablesorter-rails/issues',
+    'changelog_uri'   => 'https://github.com/themilkman/jquery-tablesorter-rails/blob/master/CHANGELOG.md',
+    'source_code_uri' => 'https://github.com/themilkman/jquery-tablesorter-rails'
+  }
 
   s.files       = Dir['{vendor,lib}/**/*'] + %w( MIT-LICENSE Rakefile README.md )
 
