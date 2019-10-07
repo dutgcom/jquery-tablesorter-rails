@@ -1,6 +1,10 @@
 Changelog
 ===
 
+#### v1.27.1 (2019-10-07)
+
+* Fix installing in Rails < 6, remove railties limit constraint for now (fix github#10)
+
 #### v1.27.0 (2019-08-18)
 
 * Bump rails dependency to support Rails 6.0.0
