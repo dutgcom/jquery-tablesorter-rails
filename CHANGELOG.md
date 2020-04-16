@@ -1,6 +1,12 @@
 Changelog
 ===
 
+#### v1.27.2 (2020-04-16)
+
+* Upgrade tablesorter to v2.31.3
+* Update Readme
+* Update copyright
+
 #### v1.27.1 (2019-10-07)
 
 * Fix installing in Rails < 6, remove railties limit constraint for now (fix github#10)
