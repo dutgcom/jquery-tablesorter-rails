@@ -1,3 +1,13 @@
+# This fork.
+
+It's the same as https://github.com/themilkman/jquery-tablesorter-rails
+
+But with one difference - it has jquery-metadata library ( https://github.com/jquery-archive/jquery-metadata ) removed.
+
+It contained eval and prevented me to implement strict Content Security Policy.
+
+The original readme is below.
+
 # jQuery tablesorter plugin for Rails
 
 [![Gem Version](https://badge.fury.io/rb/jquery-tablesorter.png)](http://badge.fury.io/rb/jquery-tablesorter)
@@ -42,7 +52,6 @@ This will require all core jquery-tablesorter files. Please note: This loads onl
 Or you can include single file with:
 
 ```javascript
-//= require jquery-tablesorter/jquery.metadata
 //= require jquery-tablesorter/jquery.tablesorter
 //= require jquery-tablesorter/jquery.tablesorter.widgets
 //= require jquery-tablesorter/addons/pager/jquery.tablesorter.pager

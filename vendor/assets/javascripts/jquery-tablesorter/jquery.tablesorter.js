@@ -227,8 +227,7 @@
 			}
 
 			var tmp = '',
-				$table = $( table ),
-				meta = $.metadata;
+			$table = $( table )
 			// initialization flag
 			table.hasInitialized = false;
 			// table is being processed flag
@@ -312,8 +311,8 @@
 			// in jQuery < 1.4, an error occurs when calling $table.data()
 			if ( c.supportsDataObject && typeof $table.data().sortlist !== 'undefined' ) {
 				c.sortList = $table.data().sortlist;
-			} else if ( meta && ( $table.metadata() && $table.metadata().sortlist ) ) {
-				c.sortList = $table.metadata().sortlist;
+			} else if ( $table.data() && $table.data().sortlist ) {
+				c.sortList = $table.data().sortlist;
 			}
 			// apply widget init code
 			ts.applyWidget( table, true );
@@ -2393,7 +2392,7 @@
 				val = '',
 				$header = $( header );
 			if ( !$header.length ) { return ''; }
-			meta = $.metadata ? $header.metadata() : false;
+			meta = $header.data();
 			cl4ss = ' ' + ( $header.attr( 'class' ) || '' );
 			if ( typeof $header.data( key ) !== 'undefined' ||
 				typeof $header.data( key.toLowerCase() ) !== 'undefined' ) {
@@ -2863,7 +2862,7 @@
 		format : function( str, table, cell ) {
 			var c = table.config,
 			p = ( !c.parserMetadataName ) ? 'sortValue' : c.parserMetadataName;
-			return $( cell ).metadata()[ p ];
+			return $( cell ).data()[ p ];
 		},
 		type : 'numeric'
 	});
